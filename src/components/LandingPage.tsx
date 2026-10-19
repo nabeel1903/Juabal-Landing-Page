@@ -341,7 +341,7 @@ export function LandingPage() {
             </div>
           </div>
 
-          <div className="shell v2-hero-layout">
+          <div className="v2-hero-layout">
             <div className="v2-hero-copy">
               <p className="v2-eyebrow"><span /> AI voice agent for service businesses</p>
               <h1>Turn every call into <em>actionable data.</em></h1>

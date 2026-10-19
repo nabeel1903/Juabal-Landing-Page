@@ -459,12 +459,15 @@
 
 .v2-hero-layout {
   position: relative;
-  z-index: 5;
+  z-index: 8;
   display: grid;
   height: 100%;
-  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+  width: 100%;
+  box-sizing: border-box;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   align-items: center;
   padding-top: 64px;
+  padding-inline: clamp(24px, 4.5vw, 84px);
 }
 
 .v2-hero-copy {
@@ -1878,6 +1881,7 @@
     grid-template-columns: 1fr;
     align-items: start;
     padding-top: 142px;
+    padding-inline: 20px;
   }
 
   .v2-hero-copy {
@@ -2724,6 +2728,7 @@
 
   .v2-hero-layout {
     padding-top: 126px;
+    padding-inline: 16px;
   }
 
   .v2-hero-copy h1 {
@@ -3411,7 +3416,7 @@
 
 .site-nav-wrap {
   top: 12px;
-  padding-inline: clamp(18px, 3vw, 48px);
+  padding-inline: clamp(20px, 4.5vw, 84px);
   transition:
     top 380ms cubic-bezier(0.22, 1, 0.36, 1),
     padding 380ms cubic-bezier(0.22, 1, 0.36, 1);
@@ -3425,7 +3430,7 @@
 .site-nav {
   position: relative;
   display: grid;
-  width: min(1460px, 100%);
+  width: 100%;
   min-height: 68px;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
